@@ -12,9 +12,16 @@ Link to a feature: [Calculator](SpecFlowSpecs/Features/Calculator.feature)
 	When the two numbers are added
 	Then the result should be 120
 
+@mytag
+ Scenario: Add two numbers V2
+	Given the first number is 5
+	And the second number is 2
+	When the two numbers are added
+	Then the result should be 7
 
- Scenario: Invalid sum
-	Given the first number is 4
-	And the second number is 1
+@mytag
+ Scenario: Not Equal Zero
+	Given the first number is 5
+	And the second number is 2
 	When the two numbers are added
 	Then the result should not be 0
