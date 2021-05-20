@@ -5,6 +5,9 @@ using System.Linq;
 
 namespace SpecLab.Data
 {
+    /// <summary>
+    /// Simula algumas operações simples de obtenção de dados de usuário.
+    /// </summary>
     public class CustomerData
     {
         private List<Model.Customer> _customerList;
