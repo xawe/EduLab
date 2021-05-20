@@ -5,6 +5,10 @@ using Xunit;
 
 namespace UnitTest.Data
 {    
+    /// <summary>
+    /// Responsável por validar as funcionaldades da classe CustomerData
+    /// A ideia é que cada nova funcionalidade seja testada e futuras atualizaçoes precisam garantir que os testes continuam passando.   
+    /// </summary>
     public class CustomerDataTest
     {
         public CustomerDataTest()
