@@ -4,6 +4,9 @@ using System.Text;
 
 namespace SpecLab.Data
 {
+    /// <summary>
+    /// Apenas um gerador de dados, simulando um retorno de um query ou um serviço
+    /// </summary>
     public class MockCustomer
     {
         public static List<Model.Customer> getMockCustomer()
