@@ -36,5 +36,34 @@ namespace UnitTest.Data
             Assert.False(r.Count > 0);
         }
 
+        /// <summary>
+        /// Busca customer by name ok 
+        /// </summary>
+        [Fact]
+        public void GetUserByNameTestOK()
+        {
+            string name = "Huguinho";
+            string lastName = "Patinhas";
+            var r = _data.GetCustomerByName(name);
+
+            Assert.NotNull(r);
+            Assert.Equal(lastName, r.SecondName);
+            Assert.Equal(1, r.Id);
+        }
+
+
+        /// <summary>
+        /// Busca Customer by name - not found
+        /// </summary>
+        [Fact]
+        public void GetUserByNameTestNotFound()
+        {
+            string name = "Pluto";
+            string lastName = "";
+            var r = _data.GetCustomerByName(name);
+
+            Assert.Null(r);
+            
+        }
     }
 }
